@@ -1,7 +1,7 @@
 #!/bin/bash              # This is a regular bash script
 #BSUB -J 4cores         # Job name — shows up in bstat/bjobs
 #BSUB -q hpc             # Queue — "hpc" is the default CPU queue
-#BSUB -W 5               # Walltime limit — 5 minutes max
+#BSUB -W 2               # Walltime limit — 5 minutes max
 #BSUB -R "rusage[mem=512MB]"  # Memory per core — request 512MB
 #BSUB -n 4
 #BSUB -R "span[hosts=1]"
